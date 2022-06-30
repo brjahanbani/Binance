@@ -20,6 +20,11 @@ const routes: Routes = [
             (m) => m.AuthenticationModule
           ),
       },
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/trades/trades.module').then((m) => m.TradesModule),
+      },
     ],
   },
 ];

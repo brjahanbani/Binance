@@ -24,6 +24,7 @@ const routes: Routes = [
         (m) => m.AuthenticationModule
       ),
   },
+  { path: 'trades', loadChildren: () => import('./layout/pages/trades/trades.module').then(m => m.TradesModule) },
 ];
 
 @NgModule({
