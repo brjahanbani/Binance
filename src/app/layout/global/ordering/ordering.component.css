@@ -3,3 +3,18 @@
   color: #d1d1d1;
   border: 1px solid #282c32;
 }
+
+.nav-tabs {
+  border-bottom: 1px solid #6c757d;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #d1d1d1;
+  background-color: #151A24;
+  border-color: #6c757d #6c757d #6c757d;
+}
+
+.nav-link {
+  color: #6c757d;
+}
