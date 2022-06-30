@@ -1,1 +1,154 @@
-<p>ordering works!</p>
+<div class="contanier">
+  <div class="d-flex justify-content-center mt-2">
+    <div class="p-2">
+      <!-- first line -->
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <p class="small text-muted mb-0 pb-2">MAX</p>
+        </div>
+        <div class="">
+          <p class="small text-muted mb-0 pb-2">0.000 BTC</p>
+        </div>
+      </div>
+
+      <!-- Input line -->
+      <div class="d-flex justify-content-start mb-0">
+        <button class="btn btn-dark px-2 me-2">
+          <!-- in button (click)="minusQuantity(i)" -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-dash"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+            />
+          </svg>
+        </button>
+        <div class="form-outline">
+          <input
+            id="form1"
+            name="quantity"
+            type="number"
+            class="form-control"
+          />
+        </div>
+        <!-- in top input class [value]="orderProduct.quantity" -->
+        <button class="btn btn-dark px-2 ms-2">
+          <!-- in button (click)="plusQuantity(i)" -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-plus"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Third Line -->
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <p class="small text-muted mt-2 pb-2">PREMIUM</p>
+        </div>
+        <div class="">
+          <p class="small text-muted mt-2 pb-2">0.00 USDT</p>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="d-grid gap-2">
+        <button class="btn btn-success" type="submit">Buy Call</button>
+      </div>
+    </div>
+    <!-- ============================================================================================= -->
+    <div class="p-2">
+      <!-- first line -->
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <p class="small text-muted mb-0 pb-2">MAX</p>
+        </div>
+        <div class="">
+          <p class="small text-muted mb-0 pb-2">0.000 BTC</p>
+        </div>
+      </div>
+
+      <!-- Input line -->
+      <div class="d-flex justify-content-start mb-0">
+        <button class="btn btn-dark px-2 me-2">
+          <!-- in button (click)="minusQuantity(i)" -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-dash"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+            />
+          </svg>
+        </button>
+        <div class="form-outline">
+          <input
+            id="form1"
+            name="quantity"
+            type="number"
+            class="form-control"
+          />
+        </div>
+        <!-- in top input class [value]="orderProduct.quantity" -->
+        <button class="btn btn-dark px-2 ms-2">
+          <!-- in button (click)="plusQuantity(i)" -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-plus"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Third Line -->
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <p class="small text-muted mt-2 pb-2">PREMIUM</p>
+        </div>
+        <div class="">
+          <p class="small text-muted mt-2 pb-2">0.00 USDT</p>
+        </div>
+      </div>
+      <!-- button -->
+      <div class="d-grid gap-2">
+        <button class="btn btn-danger" type="submit">Buy Put</button>
+      </div>
+    </div>
+  </div>
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Tabs -->
+  <div class="container mt-2">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Positions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">History</a>
+      </li>
+    </ul>
+  </div>
+</div>

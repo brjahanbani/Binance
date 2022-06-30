@@ -2,3 +2,7 @@ p {
   margin-bottom: 0.25rem;
   color: #939BA8;
 }
+
+.border-top {
+  border-top: 0px solid #000000 !important;
+}
