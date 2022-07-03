@@ -1,0 +1,29 @@
+<ng-template #signedout>
+  <div class="d-grid gap-2 mt-2">
+    <p>
+      You are not LogedIn and can not see some features. Please Log in or Sign
+      up!
+    </p>
+    <button
+      class="btn btn-primary"
+      routerLink="/signin"
+      routerLinkActive="active"
+      type="button"
+    >
+      LogIn
+    </button>
+    <button
+      class="btn btn-success"
+      routerLink="/signup"
+      routerLinkActive="active"
+      type="button"
+    >
+      SignUp
+    </button>
+  </div>
+</ng-template>
+<ng-container *ngIf="authService.signedin$ | async; else signedout">
+  <div class="d-grid gap-2 mt-2">
+    <p>You are LogedIn!</p>
+  </div>
+</ng-container>
