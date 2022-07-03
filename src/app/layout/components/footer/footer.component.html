@@ -28,7 +28,7 @@
     <img src="../assets/Icons/trades.svg" width="50" height="auto" />
     <p class="mt-1">Trades</p>
   </div>
-  <ng-container>
+  <ng-container *ngIf="authService.signedin$ | async">
     <div
       class="p-3 bd-highlight mt-1"
       routerLink="/funds"
@@ -37,7 +37,11 @@
       <img src="../assets/Icons/funds.svg" width="50" height="auto" />
       <p class="mt-1">Funds</p>
     </div>
-    <div class="p-3 bd-highlight mt-1" routerLink="/" routerLinkActive="active">
+    <div
+      class="p-3 bd-highlight mt-1"
+      routerLink="/signout"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="50"
