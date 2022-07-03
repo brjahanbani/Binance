@@ -1,0 +1,42 @@
+<div class="form-floating mb-3">
+  <input
+    [type]="type"
+    [formControl]="control"
+    [placeholder]="placeholder"
+    class="form-control"
+    aria-label="Username"
+  />
+  <label class="form-label">{{ label }}</label>
+
+  <ng-container *ngIf="showErrors()">
+    <span
+      class="badge bg-warning text-dark"
+      *ngIf="control.hasError('required')"
+    >
+      Is required
+    </span>
+    <span class="badge bg-danger" *ngIf="control.hasError('minlength')">
+      Minimum length is {{ control.errors?.['minlength'].requiredLength }} and
+      your Character Number is {{control.errors?.['minlength'].actualLength}}
+    </span>
+    <span class="badge bg-danger" *ngIf="control.hasError('maxlength')">
+      Maximum length is {{ control.errors?.['maxlength'].requiredLength }} and
+      your Character Number is {{control.errors?.['maxlength'].actualLength}}
+    </span>
+    <span class="badge bg-danger" *ngIf="control.hasError('nonUniqueUsername')">
+      This Username is already taken
+    </span>
+    <span class="badge bg-danger" *ngIf="control.hasError('unknownError')">
+      Unknown Error
+    </span>
+    <span class="badge bg-danger" *ngIf="control.hasError('email')">
+      Please enter a valid email address
+    </span>
+    <!-- <span class="badge bg-warning text-dark" *ngIf="control.hasError('email.subject')">
+          Email subject is required
+        </span>
+        <span class="badge bg-warning text-dark" *ngIf="control.hasError('email.text')">
+          Email content is required
+        </span> -->
+  </ng-container>
+</div>
